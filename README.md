@@ -9,4 +9,4 @@ High-performance local retrieval for AI agents.
 ## Core Stack
 - **Database:** LanceDB
 - **Embeddings:** sentence-transformers (Local CPU)
-- **Orchestrator:** TBot (OpenClaw)
+- **Orchestrator:** TBot
