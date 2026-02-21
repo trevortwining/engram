@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+.venv/
+env/
+venv/
+ENGRAM_DB_PATH
+engram.lancedb/
+*.DS_Store
+.python-version

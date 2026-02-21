@@ -1,0 +1,13 @@
+[project]
+name = "engram"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lancedb>=0.29.2",
+    "pyarrow>=23.0.1",
+    "pytest>=9.0.2",
+    "sentence-transformers>=5.2.3",
+    "typer>=0.24.0",
+]
