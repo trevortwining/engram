@@ -13,6 +13,8 @@
 7. [x] Implement core indexer and searcher (SPEC-001/SPEC-003)
 
 ### Next Steps:
+- [x] Draft **SPEC-004** (OpenClaw skill that queries Engram and prompts reindexing).
+- [ ] Build the OpenClaw skill after SPEC-004 is approved.
 - [ ] Refine chunking logic (handle headers and long files).
 - [ ] Add incremental indexing (only process new/changed files).
 - [ ] Integrate into TBot's workflow as a memory tool.
