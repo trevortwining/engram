@@ -22,14 +22,14 @@ def index(path: str):
     model = SentenceTransformer(MODEL_NAME)
     
     # 2. Collect Markdown Files
-    md_files = list(Path(path).rglob("*.md"))
+    md_files = [f for f in Path(path).rglob("*.md") if ".venv" not in str(f) and not any(part.startswith('.') for part in f.parts)]
     typer.echo(f"Found {len(md_files)} Markdown files.")
     
     data = []
     for file in md_files:
         content = file.read_text(encoding="utf-8")
-        # Simple chunking by paragraph for now
-        chunks = [c.strip() for c in content.split("\n\n") if c.strip()]
+        # Simple chunking by line
+        chunks = [c.strip() for c in content.split("\n") if c.strip()]
         
         for i, chunk in enumerate(chunks):
             # We'll use the model to encode the chunk
