@@ -81,6 +81,16 @@ def search(query: str, limit: int = 5):
         
     print(json.dumps(output, indent=2))
 
+@app.command()
+def mcp(db_path: str = "engram.lancedb"):
+    """Start the MCP server to allow AI assistants to search engram."""
+    import asyncio
+    from engram.mcp.server import EngramServer, main as mcp_main
+    
+    # We use a wrapper or call the main from server.py directly
+    # Passing db_path if needed
+    asyncio.run(mcp_main(db_path=db_path))
+
 def main():
     app()
 
