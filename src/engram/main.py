@@ -11,6 +11,12 @@ app = typer.Typer()
 # Constants
 DB_PATH = Path("engram.lancedb")
 MODEL_NAME = "all-MiniLM-L6-v2"
+VERSION = "0.1.0"
+
+@app.command()
+def version():
+    """Display the version of engram."""
+    typer.echo(f"engram v{VERSION}")
 
 @app.command()
 def index(path: str):
@@ -75,5 +81,8 @@ def search(query: str, limit: int = 5):
         
     print(json.dumps(output, indent=2))
 
-if __name__ == "__main__":
+def main():
     app()
+
+if __name__ == "__main__":
+    main()

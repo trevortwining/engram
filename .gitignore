@@ -10,6 +10,7 @@ env/
 venv/
 ENGRAM_DB_PATH
 engram.lancedb/
+test_docs/
 *.DS_Store
 .python-version
 direct_search.py

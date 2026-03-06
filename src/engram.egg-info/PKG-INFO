@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: engram
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: lancedb>=0.29.2
+Requires-Dist: pyarrow>=23.0.1
+Requires-Dist: pytest>=9.0.2
+Requires-Dist: sentence-transformers>=5.2.3
+Requires-Dist: typer>=0.24.0
+
+# Engram (Local Memory Engine)
+High-performance local retrieval for AI agents.
+
+## Quick Start
+1. Ensure `uv` is installed.
+2. Run `uv sync`.
+3. (Development) Specs are located in the root directory.
+
+## Core Stack
+- **Database:** LanceDB
+- **Embeddings:** sentence-transformers (Local CPU)
+- **Orchestrator:** TBot

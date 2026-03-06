@@ -3,8 +3,18 @@ High-performance local retrieval for AI agents.
 
 ## Quick Start
 1. Ensure `uv` is installed.
-2. Run `uv sync`.
-3. (Development) Specs are located in the root directory.
+2. Install the tool locally:
+   ```bash
+   uv tool install .
+   ```
+3. Index your data:
+   ```bash
+   engram index ./docs
+   ```
+4. Search memory:
+   ```bash
+   engram search "how to use engram"
+   ```
 
 ## Core Stack
 - **Database:** LanceDB

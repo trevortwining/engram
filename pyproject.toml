@@ -11,3 +11,6 @@ dependencies = [
     "sentence-transformers>=5.2.3",
     "typer>=0.24.0",
 ]
+
+[project.scripts]
+engram = "engram.main:main"
