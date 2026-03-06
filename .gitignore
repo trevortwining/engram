@@ -12,3 +12,5 @@ ENGRAM_DB_PATH
 engram.lancedb/
 *.DS_Store
 .python-version
+direct_search.py
+inspect_db.py
